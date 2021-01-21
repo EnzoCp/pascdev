@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Pascucci Developments</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="{% static "images/icon.png" %}" type="image/x-icon">
+    <link rel="icon" href="{% static "images/icon.png" %}" />
+    <meta name="theme-color" content="#121214" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Pascucci Developments">
+    <meta name="description" content="Desenvolvedor Back-end com experiência em criação de lojas virtuais, blogs e sistemas em geral.">
+    <meta name="keywords"
+        content="desenvolvedor, developer, django, criação de e-commerce, são paulo, enzo pascucci, enzo, pascucci, desenvolvedor em são paulo, freelancer, criação de blogs, Django Rest Framework, backend, Back-end" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Jefferson Calmon - https://jeffersoncalmon.dev" />
+    <meta name="copyright" content="Enzo Pascucci - Todos os direitos reservados" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pascuccidevelopments.com">
+    <meta property="og:title" content="Pascucci Developments">
+    <meta property="og:description" content="Desenvolvedor Back-end com experiência em criação de lojas virtuais, blogs e sistemas em geral.">
+    <meta property="og:image" content="{% static "images/og-image.png" %}">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="{% static "images/icon.png" %}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pascuccidevelopments.com">
+    <meta property="twitter:title" content="Pascucci Developments">
+    <meta property="twitter:description" content="Desenvolvedor Back-end com experiência em criação de lojas virtuais, blogs e sistemas em geral.">
+    <meta property="twitter:image" content="{% static "images/og-image.png" %}">
+
+    <link rel="canonical" href="https://pascuccidevelopments.com" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/styles.css' %}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="content">
+            <h1>
+                <a href="/">
+                    Pascucci Developments
+                </a>
+            </h1>
+
+            <nav id="navigation" onclick="toggleElementsById(['toggle', 'navigation'])">
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact" class="button">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div id="toggle" onclick="toggleElementsById(['toggle', 'navigation'])">
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="content">
+            <h1>Venha transformar a sua ideia em <span class="colorize">código</span>!!</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, maiores non.  </p>
+
+            <div class="buttons">
+                <a href="#about">Saber mais</a>
+                <a href="#contact">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <div class="text">
+                <h1>Sobre o <span class="colorize">desenvolvedor</span></h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, obcaecati. Inventore nemo dolore doloribus officiis possimus. Impedit facere nam, fugit voluptates rem aliquid adipisci repellendus voluptatem laboriosam aperiam obcaecati pariatur! lorem</p>
+
+                <a href="#skills">Habilidades</a>
+            </div>
+
+            <div class="image">
+                <img src="{% static "images/dev.png" %}" class="dev" alt="Pascucci Developments">
+            </div>
+        </div>
+        <img src="{% static "images/layers-01.svg" %}" class="layer first" alt="Pascucci Developments">
+        <img src="{% static "images/layers-01.svg" %}" class="layer second" alt="Pascucci Developments">
+    </section>
+
+    <section id="skills">
+        <div class="content">
+            <h1>Principais <span class="colorize">habilidades</span></h1>
+
+            <div class="grid-skills">
+                <div class="skill">
+                    <img src="{% static "images/skill-dev-backend.svg" %}" alt="Pascucci Developments">
+                    <h2>Desenvolvedor Back-end</h2>
+                    <p>Aplicações desenvolvidas com Django, Django Rest Framework e NodeJS.</p>
+                </div>
+                <div class="skill">
+                    <img src="{% static "images/skill-ecommerce.svg" %}" alt="Pascucci Developments">
+                    <h2>Loja Virtual / E-commerce</h2>
+                    <p>Criação de Loja Online, venda produtos ou receba pagamentos através da da Internet.</p>
+                </div>
+                <div class="skill">
+                    <img src="{% static "images/skill-testes.svg" %}" alt="Pascucci Developments">
+                    <h2>Familiaridade com testes</h2>
+                    <p>Todas as aplicações são testadas com testes unitários e testes TDD.</p>
+                </div>
+                <div class="skill">
+                    <img src="{% static "images/skill-security.svg" %}" alt="Pascucci Developments">
+                    <h2>Segurança e estabilidade</h2>
+                    <p>Sites e sistemas com o máximo de segurança, proteção e estabilidade.</p>
+                </div>
+                <div class="skill">
+                    <img src="{% static "images/skill-sites.svg" %}" alt="Pascucci Developments">
+                    <h2>Criação de sites</h2>
+                    <p>Desenvolvimento de sites, páginas e blogs. Com tecnologias como: HTML, CSS, JavaScript e ReactJS.</p>
+                </div>
+                <div class="skill">
+                    <img src="{% static "images/skill-seo.svg" %}" alt="Pascucci Developments">
+                    <h2>Bom SEO</h2>
+                    <p>Aplicações com alta taxa de indexação orgânica no google e com boas práticas de SEO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content">
+            <h1>Meus <span class="colorize">projetos</span></h1>
+            <p>Alguns dos meus principais projetos realizados e entregues.</p>
+
+            <div class="grid-projects">
+                {% for p in projetos %}
+                <div class="project">
+                    <div class="image">
+                        <img src="{{ p.foto.url }}" alt="{{ p.nome }}">
+                    </div>
+                    <div class="text">
+                        <h2>{{ p.nome }}</h2>
+                        <p>{{ p.descricao|safe }}</p>
+
+                        <a href="{{ p.url }}">
+                            Ver projeto
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h1>Entre em <span class="colorize">contato</span></h1>
+
+            <div class="wrapper">
+                <form action="/" method="GET" required>
+                    <div class="block">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="" required>
+                                <span class="text">Nome</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="" required>
+                                <span class="text">E-Mail</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="" required>
+                                <span class="text">Whatsapp</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <textarea name="" id="" cols="30" rows="10" required></textarea>
+                                <span class="text">Digite a sua mensagem aqui...</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="col">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+                <div class="info">
+                    <a href="https://www.linkedin.com/in/enzo-pascucci-3871871a8/" class="item linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/EnzoCp" class="item github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/+5511953001305" class="item whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="item instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content">
+            <p>&copy; 2020 Pascucci Developments - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="{% static "scripts/scripts.js" %}"></script>
+    <script src="https://kit.fontawesome.com/933126bd37.js" crossorigin="anonymous"></script>
+</body>
+</html>
